@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/bit2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo{
+    font-size: 2rem;
+    font-family: Georgia;
+    color: #E7A861 ;
+    margin: 0.5rem;
+    
+}
+
+ul{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+}
+li{
+    list-style-type: none;
+}
+li, a{
+    text-decoration: none;
+    color:#0d9208be ;
+    padding: 1rem;
+    display: block;
+}
+li:hover{
+    background-color:#95870E;
+    
+}
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5px;
+    height: 21px;
+}
+.toggle-button, .bar{
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+@media (max-width:600px) {
+    .toggle-button{
+        display: flex;
+        
+    }
+    
+    li{
+        display: none;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    li{
+        text-align: center;
+    }
+    li, a{
+        padding: .5rem;
+    }
+    ul.active{
+        display: flex;
+    }
+  
+}
